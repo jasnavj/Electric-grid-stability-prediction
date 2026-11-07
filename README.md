@@ -85,3 +85,11 @@ The notebook reports a held-out test accuracy of **97.20%** on 2,000 test observ
 
 Dataset: UCI Machine Learning Repository.  
 Developed as a machine learning training project.
+
+## Scope and Limitations
+
+This project is an educational Machine Learning application developed using simulated electrical grid stability data.
+
+It demonstrates how machine learning can be used to classify electrical grid operating conditions as Stable or Unstable based on 12 input parameters.
+
+**Important:** This application is intended for learning and demonstration purposes only. It is not connected to a real electrical power grid and should not be used for real-time grid monitoring, operational control, or critical infrastructure decisions.
