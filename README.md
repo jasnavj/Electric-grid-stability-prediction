@@ -15,6 +15,20 @@ A supervised machine learning project that predicts whether a simulated electric
 - Best cross-validation macro F1 during tuning: **95.59%**
 - Best parameters: `C=10`, `kernel='rbf'`, `gamma='auto'`
 
+## Application Screenshots
+
+### 1. Application Overview
+![Application Overview](screenshots/overview.png)
+
+### 2. Stability Predictor
+![Stability Predictor](screenshots/stability_predictor.png)
+
+### 3. Model Performance
+![Model Performance](screenshots/model_performance.png)
+
+### 4. About Project
+![About Project](screenshots/about_project.png)
+
 ## Repository structure
 
 ```text
