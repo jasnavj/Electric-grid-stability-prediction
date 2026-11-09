@@ -1,4 +1,5 @@
 # Electric Grid Stability Prediction
+🔗 **Live Demo:** [https://grid-stability-jasna.streamlit.app/](https://grid-stability-jasna.streamlit.app/)
 
 A supervised machine learning project that predicts whether a simulated electrical grid is **stable** or **unstable** from 12 grid-related input features. The project includes exploratory data analysis, model comparison, SVC hyperparameter tuning, model evaluation, and an interactive Streamlit application.
 
@@ -29,13 +30,15 @@ A supervised machine learning project that predicts whether a simulated electric
 ### 4. About Project
 ![About Project](screenshots/about_project.png)
 
+Try it yourself: [Open the live app](https://grid-stability-jasna.streamlit.app/)
+
 ## Repository structure
 
 ```text
-electric-grid-stability-prediction/
+Electric-grid-stability-prediction/
+├── screenshots/
 ├── app.py
-├── notebooks/
-│   └── Project_electrical_grid_stability.ipynb
+├── Project_electrical_grid_stability.ipynb
 ├── svc_model.sav
 ├── svc_scaler.sav
 ├── requirements.txt
@@ -58,8 +61,8 @@ Place the downloaded CSV file named `Electric_Grid_Stability_.csv` in the reposi
 1. Clone this repository:
 
    ```bash
-   git clone <YOUR_GITHUB_REPOSITORY_URL>
-   cd electric-grid-stability-prediction
+   git clone https://github.com/jasnavj/Electric-grid-stability-prediction.git
+   cd Electric-grid-stability-prediction
    ```
 
 2. Install the dependencies:
