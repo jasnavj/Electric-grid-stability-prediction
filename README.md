@@ -1,6 +1,6 @@
-# ⚡ Electric Grid Stability Prediction
+# Electric Grid Stability Prediction
 
-🔗 **Live App:** [https://grid-stability-jasna.streamlit.app/](https://grid-stability-jasna.streamlit.app/)
+**Live App:** [https://grid-stability-jasna.streamlit.app/](https://grid-stability-jasna.streamlit.app/)
 
 A supervised machine learning project that predicts whether a smart electrical grid is **stable** or **unstable** from 12 grid parameters. The project covers data cleaning, exploratory data analysis, a comparison of 9 algorithms, hyperparameter tuning of the best model, evaluation, and deployment as an interactive Streamlit web app.
 
@@ -8,7 +8,7 @@ A supervised machine learning project that predicts whether a smart electrical g
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 
 1. [Problem Statement](#-problem-statement)
 2. [Project Highlights](#-project-highlights)
@@ -29,7 +29,7 @@ A supervised machine learning project that predicts whether a smart electrical g
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 
 In a smart grid, electricity prices change with supply and demand, and every participant (producer or consumer) reacts to those price changes **with a delay**. Some combinations of reaction times, power levels and price sensitivity make the grid settle back to normal after a disturbance. Other combinations make the disturbance grow until the system oscillates out of control.
 
@@ -42,7 +42,7 @@ The simulated grid is a **4-node star network**: one producer (P1) at the centre
 
 ---
 
-## 🌟 Project Highlights
+## Project Highlights
 
 | Item | Details |
 |---|---|
@@ -59,7 +59,7 @@ The simulated grid is a **4-node star network**: one producer (P1) at the centre
 
 ---
 
-## 🖼️ Application Screenshots
+## Application Screenshots
 
 ### 1. Application Overview
 ![Application Overview](screenshots/overview.png)
@@ -75,7 +75,7 @@ The simulated grid is a **4-node star network**: one producer (P1) at the centre
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 **Source:** [UCI Machine Learning Repository: Electrical Grid Stability Simulated Data](https://archive.ics.uci.edu/dataset/471/electrical+grid+stability+simulated+data)
 
@@ -96,7 +96,7 @@ Power balance holds in the data: `p1 = −(p2 + p3 + p4)`.
 
 ---
 
-## 🔄 Project Workflow
+## Project Workflow
 
 1. **Data cleaning:** dropped `stab` (target leakage), checked data types and duplicates (0 found).
 2. **Missing values:** 154 missing values across the 12 features (9–18 per column) were filled with each column's **median**.
@@ -113,7 +113,7 @@ Power balance holds in the data: `p1 = −(p2 + p3 + p4)`.
 
 ---
 
-## 🔍 Exploratory Data Analysis
+## Exploratory Data Analysis
 
 | Analysis | Finding |
 |---|---|
@@ -125,7 +125,7 @@ Power balance holds in the data: `p1 = −(p2 + p3 + p4)`.
 
 ---
 
-## 🤖 Model Building and Comparison
+## Model Building and Comparison
 
 Nine algorithms were trained as baselines and compared on the 2,000 test rows:
 
@@ -148,7 +148,7 @@ Nine algorithms were trained as baselines and compared on the 2,000 test rows:
 
 ---
 
-## 🎛️ Hyperparameter Tuning
+## Hyperparameter Tuning
 
 `RandomizedSearchCV` was applied to the SVC with 5-fold cross-validation, scored by macro F1.
 
@@ -172,7 +172,7 @@ The cross-validation macro F1 (0.956) is close to the test F1 (0.97), so **overf
 
 ---
 
-## ✅ Final Model Evaluation
+## Final Model Evaluation
 
 **Test accuracy: 97.20%** on 2,000 unseen rows.
 
@@ -186,7 +186,7 @@ Only **56 of 2,000** test rows were misclassified: 29 stable predicted as unstab
 
 ---
 
-## 🖥️ Streamlit Application
+## Streamlit Application
 
 **Live app:** [https://grid-stability-jasna.streamlit.app/](https://grid-stability-jasna.streamlit.app/)
 
@@ -207,7 +207,7 @@ The app has four pages:
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 Electric-grid-stability-prediction/
@@ -225,7 +225,7 @@ The model and scaler files are kept in the repository root because `app.py` load
 
 ---
 
-## 🚀 Run Locally
+## Run Locally
 
 1. **Clone the repository**
    ```bash
@@ -248,7 +248,7 @@ The model and scaler files are kept in the repository root because `app.py` load
 
 ---
 
-## 🛠️ Tools and Libraries
+## Tools and Libraries
 
 - **Language:** Python
 - **Data handling:** Pandas, NumPy
@@ -259,7 +259,7 @@ The model and scaler files are kept in the repository root because `app.py` load
 
 ---
 
-## 💡 Key Learnings
+## Key Learnings
 
 - Dropping a column that is a direct version of the target (`stab`) prevents target leakage.
 - When classes overlap heavily in every pair of features, a non-linear model such as an RBF-kernel SVC works better than a linear one.
@@ -269,7 +269,7 @@ The model and scaler files are kept in the repository root because `app.py` load
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 - The data is **simulated** from a 4-node star grid and does not cover real-world grid complexity.
 - The app is for **learning and demonstration only**. It must not be used for real-time grid monitoring, operational control or critical infrastructure decisions.
@@ -277,16 +277,15 @@ The model and scaler files are kept in the repository root because `app.py` load
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - **Dataset:** UCI Machine Learning Repository.
-- Thank you to **Luminar Technolab** and my trainers **Jasmine Mam** and **Prajeesha Mam** for their guidance and support throughout this project.
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Jasna V J**
 GitHub: [@jasnavj](https://github.com/jasnavj)
 
-⭐ If you found this project useful, consider giving the repository a star.
+If you found this project useful, consider giving the repository a star.
